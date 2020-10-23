@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Thomas Szewczyk</title>
+  </head>
+  <body>
+    <div class="grid md:grid-cols-8">
+      <nav class="md:col-span-2 md:flex md:justify-end md:min-h-screen border-r relative">
+        <div class="flex justify-between items-center">
+          <div id="burger" class="px-4 cursor-pointer md:hidden py-4">
+            <svg class="w-6" viewBox="0 0 20 20" fill="currentColor" class="menu w-6 h-6"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </div>
+        </div>
+        <ul id="menu" class="text-sm mt-12 hidden md:block text-xl font-bold mr-12 fixed">
+          <li data-index="1" class="text-main hover:text-blue-300 py-3">
+            <a href="#home" class="px-4 flex">
+              <svg class="w-6 mr-2" viewBox="0 0 20 20" fill="currentColor" class="home w-6 h-6"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+              <span class="mx-4">Home</span>
+            </a>
+          </li>
+          <li data-index="2" class="text-secondary hover:text-blue-300 py-3">
+            <a href="#about" class="px-4 flex">
+              <svg class="w-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path></svg>
+              <span class="mx-4">Über mich</span>
+            </a>
+          </li>
+          <li data-index="3" class="text-secondary hover:text-blue-300 py-3">
+            <a href="#skills" class="px-4 flex">
+              <svg class="w-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path></svg>
+              <span class="mx-4">Kenntnisse</span>
+            </a>
+          </li>
+          <li data-index="4" class="text-secondary hover:text-blue-300 py-3">
+            <a href="#experience" class="px-4 flex">
+              <svg class="w-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+              <span class="mx-4">Lebenslauf</span>
+            </a>
+          </li>
+          <li data-index="5" class="text-secondary hover:text-blue-300 py-3">
+            <a href="#contact" class="px-4 flex">
+              <svg class="w-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+              <span class="mx-4">Kontakt</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    <!-- end nav -->
+    <main id="home" class="px-16 py-6 bg-gray-100 md:col-span-6 xl:px-40">
+    <section class="text-secondary">
+      <div class="sm:container mx-auto flex flex-col md:flex-row items-center md:min-h-screen text-center md:text-left ">
+        <div class="order-2 md:order-1 pt-12 md:pt-0">
+          <h1 class="text-4xl tracking-tight leading-10 font-extrabold text-secondary sm:text-5xl sm:leading-none md:text-6xl">Thomas<br class="hidden md:block"> Szewczyk</h1>
+          <div class="border-4 w-12 my-8 border-main mx-auto md:mx-0"></div>
+          <p class="subtitle">Medieninformatiker.</p>
+        </div>
+        <div class="order-1 md:order-2">
+          <img class="block mx-auto" src="/img/undraw_starry_window_ppm0.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <section id="about" class="pt-24 md:pb-24 md:pt-0 text-center text-secondary md:text-left">
+      <div class="lg:container lg:mx-auto flex flex-col lg:flex-row items-center">
+        <div class="flex-1 ">
+          <img class="w-48 md:w-64" src="/img/undraw_male_avatar_323b.svg" alt="">
+        </div>
+        <div class="flex-1 lg:ml-12">
+          <h1 class="text-2xl lg:text-5xl mt-8 mb-4 md:mt-0">Über mich</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="pt-24 text-secondary text-center md:text-left">
+      <div class="lg:container mx-auto text-center">
+        <h1 class="text-2xl lg:text-5xl">Kenntnisse und Fähigkeiten</h1>
+        <div class="text-left flex flex-1 flex-col md:flex-row flex-wrap py-12 mx-auto justify-center">
+          <div class="md:w-1/3 my-4 md:my-8 px-4">
+            <h3 class="text-lg font-medium mb-2 md:mb-4">Programmierung</h3>
+            <p>Kenntnisse der Programmierung mit Java und C++.</p>
+          </div>
+          <div class="md:w-1/3 my-4 md:my-8 px-4">
+            <h3 class="text-lg font-medium mb-2 md:mb-4">Webdesign</h3>
+            <p>Fähigkeit Ideen in Prototypen für Websites zu verwandeln </p>
+          </div>
+          <div class="md:w-1/3 my-4 md:my-8 px-4">
+            <h3 class="text-lg font-medium mb-2 md:mb-4">Usability & User Experience</h3>
+            <p>Evaluation der Gebrauchstauglichkeit und des Benutzererlebnisses</p>
+          </div>
+          <div class="md:w-1/3 my-4 md:my-8 px-4">
+            <h3 class="text-lg font-medium mb-2 md:mb-4">Webtechnolgien</h3>
+            <p>HTML5, CSS, JavaScript, PHP, XML</p>
+          </div>
+          <div class="md:w-1/3 my-4 md:my-8 px-4">
+            <h3 class="text-lg font-medium mb-2 md:mb-4">Webentwicklung</h3>
+            <p>Konzepte in Endprodukte umwandeln</p>
+          </div>
+          <div class="md:w-1/3 my-4 md:my-8 px-4">
+            <h3 class="text-lg font-medium mb-2 md:mb-4">Fremdsprachen</h3>
+            <p>Deutsch und Polnisch als Muttersprachen. Englisch fließend in Schrift und Sprache</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="pt-24 text-secondary">
+      <h1 class="text-2xl lg:text-5xl text-center">Lebenslauf</h1>
+      <div class="flex py-12">
+        <div class="relative m-8">
+          <div class="border-r-2 border-blue-300 absolute h-full top-0" style="left: 15px"></div>
+          <ul class="list-none m-0 p-0">
+            <li class="mb-2">
+              <div class="flex items-center mb-1">
+                <div class="bg-blue-300 rounded-full h-8 w-8"></div>
+                <div class="flex-1 ml-4 font-medium">voraus. Oktober 2021 -  Medieninformatik, Bachelor of Science </div>
+              </div>
+              <div class="ml-12">
+                Hochschulabschluss an der Westfälischen Hochschule
+              </div>
+            </li>
+            <li class="mb-2">
+              <div class="flex items-center mb-1">
+                <div class="bg-blue-300 rounded-full h-8 w-8">
+                </div>
+                <div class="flex-1 ml-4 font-medium">August 2012 - Juli 2020</div>
+              </div>
+              <div class="ml-12">
+                Basketballspieler. Zuletzt in der 2. Basketball Bundesliga
+              </div>
+            </li>
+            <li class="mb-2">
+              <div class="flex items-center mb-1">
+                <div class="bg-blue-300 rounded-full h-8 w-8"></div>
+                <div class="flex-1 ml-4 font-medium">Juli 2012 - Allgemeine Hochschulreife</div>
+              </div>
+              <div class="ml-12">
+                Abschluss am Albert-Schweitzer-Gymnasium, Crailsheim
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="hidden md:block">
+          <img class="ml-12 md:ml-16 lg:ml-24 w-64" src="/img/undraw_transfer_files_6tns.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- a lot of the lines are just svg text, actual html is simple
+A sample contact us page form written with tailwind css
+Illustration from undraw.co by the amazing Katerina Limpitsouni
+-->
+<section id="contact" class="pb-24">
+      <div class="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
+        <div class="flex flex-col justify-between">
+          <div>
+            <h2 class="text-4xl lg:text-5xl leading-tight text-secondary">Lassen Sie uns in Kontakt treten!</h2>
+            <div class="text-secondary mt-8">
+              Sie mögen keine Formulare?<br>Kein Problem. Schicken Sie einfach eine <span class="underline">E-mail</span>.
+            </div>
+          </div>
+          <div class="mt-8 text-center">
+            <img class="" src="/img/undraw_contact_us_15o2.svg" alt="">
+
+          </div>
+        </div>
+        <div class="">
+          <div>
+            <span class="uppercase text-sm text-gray-600 font-bold">Name</span>
+            <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="text" placeholder="">
+          </div>
+          <div class="mt-8">
+            <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
+            <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="text">
+          </div>
+          <div class="mt-8">
+            <span class="uppercase text-sm text-gray-600 font-bold">Nachricht</span>
+            <textarea
+              class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+          </div>
+          <div class="mt-8">
+            <button
+              class="uppercase text-sm font-bold tracking-wide bg-secondary hover:bg-main text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+              Senden
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+  <script src="main.js">
+
+  </script>
+  </body>
+</html>
