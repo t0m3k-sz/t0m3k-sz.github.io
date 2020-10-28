@@ -10,7 +10,23 @@ let skillsLink = document.querySelector("#menu li[data-index='3']");
 let experienceLink = document.querySelector("#menu li[data-index='4']");
 let contactLink = document.querySelector("#menu li[data-index='5']");
 
+let burger = document.querySelector('#burger');
+let menuOpen = document.querySelector('#menuOpen');
+let menuClosed = document.querySelector('#menuClosed');
+let menu = document.querySelector('#menu');
 
+burger.addEventListener('click', toggleBurger);
+
+function toggleBurger() {
+  menuOpen.classList.toggle('hidden');
+  menuClosed.classList.toggle('hidden');
+  toggleNav();
+}
+
+function toggleNav() {
+  menu.classList.toggle('-ml-64');
+  menu.classList.toggle('ml-0');
+}
 
 function modifyActive() {
   let currentActive = document.querySelector('.text-main');
