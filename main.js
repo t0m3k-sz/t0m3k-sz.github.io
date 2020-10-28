@@ -14,8 +14,13 @@ let burger = document.querySelector('#burger');
 let menuOpen = document.querySelector('#menuOpen');
 let menuClosed = document.querySelector('#menuClosed');
 let menu = document.querySelector('#menu');
+let menuItems = document.querySelectorAll('#menu li');
 
 burger.addEventListener('click', toggleBurger);
+
+menuItems.forEach(item => {
+  item.addEventListener('click', toggleBurger);
+});
 
 function toggleBurger() {
   menuOpen.classList.toggle('hidden');
