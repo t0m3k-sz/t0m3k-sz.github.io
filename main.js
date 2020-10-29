@@ -34,9 +34,9 @@ function toggleNav() {
 }
 
 function modifyActive() {
-  let currentActive = document.querySelector('.text-main');
+  let currentActive = document.querySelector('.text-teal-500');
   currentActive.classList.add('text-secondary');
-  currentActive.classList.remove('text-main');
+  currentActive.classList.remove('text-teal-500');
 }
 
 var isInViewport = function (elem) {
@@ -78,5 +78,5 @@ window.addEventListener('scroll', function (event) {
 
 function setNewActive(elem) {
   elem.classList.remove('text-secondary');
-  elem.classList.add('text-main');
+  elem.classList.add('text-teal-500');
 }
